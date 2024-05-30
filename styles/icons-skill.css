@@ -1,0 +1,59 @@
+@font-face {
+  font-family: 'icons__skill';
+  src: url('../fonts_icons_skill/icons__skill.eot?l7g153');
+  src: url('../fonts_icons_skill/icons__skill.eot?l7g153#iefix') format('embedded-opentype'),
+    url('../fonts_icons_skill/icons__skill.ttf?l7g153') format('truetype'),
+    url('../fonts_icons_skill/icons__skill.woff?l7g153') format('woff'),
+    url('../fonts_icons_skill/icons__skill.svg?l7g153#icons__skill') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icons__skill-"]::before,
+[class*=" icons__skill-"]::before {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icons__skill' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icons__skill-html5:before {
+  content: "\e900";
+}
+
+.icons__skill-css3-alt:before {
+  content: "\e901";
+}
+
+.icons__skill-sass:before {
+  content: "\e902";
+}
+
+.icons__skill-js:before {
+  content: "\e903";
+}
+
+.icons__skill-angular:before {
+  content: "\e904";
+}
+
+.icons__skill-TS:before {
+  content: "\e905";
+}
+
+.icons__skill-RxJs:before {
+  content: "\e906";
+}
+
+.icons__skill-git-alt:before {
+  content: "\e907";
+}
