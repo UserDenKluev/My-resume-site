@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 /* Reset and base styles  */
 * {
     padding: 0px;
@@ -8,6 +15,7 @@
 *,
 *::before,
 *::after {
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -45,10 +53,10 @@ p {
     font-weight: inherit;
 }
 
-ul,
+/* ul,
 ul li {
     list-style: none;
-}
+} */
 
 img {
     vertical-align: top;
@@ -83,6 +91,7 @@ input::-ms-clear {
 button,
 input[type="submit"] {
     display: inline-block;
+    -webkit-box-shadow: none;
     box-shadow: none;
     background-color: transparent;
     background: none;
