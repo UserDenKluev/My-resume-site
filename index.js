@@ -233,3 +233,49 @@ for (let anchor of anchors) {
     })
 }
 
+
+
+const historyMap = document.querySelector('.button-history-map');
+const historyMapActive = document.querySelector('.history-map_active');
+
+const closeButton = document.querySelectorAll('.close__portfolio__item');
+const moreDetails = document.querySelectorAll('.more-details');
+
+historyMap.addEventListener('click', () => {
+    historyMapActive.style.display = 'flex';
+})
+for (const i of closeButton) {
+    i.addEventListener('click', () => {
+        historyMapActive.style.display = 'none';
+    })
+}
+
+for (const i of moreDetails) {
+    i.addEventListener('click', (e) => {
+        if (e.target.classList[0] == 'more-details') {
+            historyMapActive.style.display = 'none';
+        }
+    })
+}
+
+const musicApp = document.querySelector('.button-music-app');
+const musicAppActive = document.querySelector('.music-app_active');
+
+musicApp.addEventListener('click', () => {
+    musicAppActive.style.display = 'flex';
+})
+
+
+for (const i of closeButton) {
+    i.addEventListener('click', () => {
+        musicAppActive.style.display = 'none';
+    })
+}
+
+for (const i of moreDetails) {
+    i.addEventListener('click', (e) => {
+        if (e.target.classList[0] == 'more-details') {
+            musicAppActive.style.display = 'none';
+        }
+    })
+}
