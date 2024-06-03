@@ -117,6 +117,8 @@ body::-webkit-scrollbar {
 .nav__link {
     word-spacing: 3px;
     font-size: 20px;
+    text-shadow: 2px 2px 2px black;
+
 }
 
 .nav__hover {
@@ -175,7 +177,7 @@ body::-webkit-scrollbar {
 
     .nav {
         display: none;
-        padding: 120px 0 80px;
+        padding: 130px 0 10vh;
         width: 100vw;
         height: 100vh;
         border: none;
@@ -193,6 +195,10 @@ body::-webkit-scrollbar {
         align-items: center;
     }
 
+    .nav__link {
+        font-size: 25px;
+    }
+
     .nav-adaptiv-active {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -206,7 +212,7 @@ body::-webkit-scrollbar {
 
 @media (max-width: 400px) {
     .nav {
-        padding: 100px 0 10px;
+        /* padding: 100px 0 10px; */
     }
 }
 

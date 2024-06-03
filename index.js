@@ -2,7 +2,6 @@ if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
     document.querySelector('#cursor').classList.add('cursor__none');
 }
 
-
 window.addEventListener('load', function () {
     const loader = document.querySelector('.nav');
     loader.classList.add('nav-active');
@@ -17,7 +16,7 @@ const body = document.body;
 
 navAdapt.addEventListener('click', () => {
     nav.classList.toggle('nav-adaptiv-active')
-    body.classList.toggle('body__scroll')
+    body.classList.toggle('body__scroll');
 })
 
 window.addEventListener('resize', (e) => {
@@ -26,6 +25,14 @@ window.addEventListener('resize', (e) => {
         body.classList.remove('body__scroll')
     }
 })
+
+const navLink = document.querySelectorAll('.nav__link');
+
+for (const link of navLink) {
+    link.addEventListener('click', () => {
+        body.classList.remove('body__scroll');
+    })
+}
 
 
 
@@ -169,11 +176,6 @@ function setUnderlineLink() {
                         }
                     }
 
-                    // for (const key in skillsText) {
-                    //     console.log(key);
-                    //     console.log(skillsText[key]);
-                    //     skillsText[key].classList.add('conteiner__skills__right-active');
-                    // }
                 }, 300)
             }
 
